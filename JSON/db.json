@@ -1,0 +1,65 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "Front End Development",
+      "img": "../images/course-1.svg",
+      "price": "19.99$",
+      "desccription": "You'll Learn All The Fundamentals Of Front-End Web Development And How You Can Use Them T Start Creating Websites!"
+    },
+    {
+      "id": 2,
+      "name": "Back End Development",
+      "img": "../images/course-2.svg",
+      "price": "29.99$",
+      "desccription": "Learn The 25 Codes To Start. A Beginner Course With The Essential Basic Codes Of Dynamic Web Programming."
+    },
+    {
+      "id": 3,
+      "name": "Full Stack Development",
+      "img": "../images/course-3.svg",
+      "price": "89.99$",
+      "desccription": "Build And Deploy Fullstack Web Apps With NodeJS, React, Redux, Express, And MongoDB."
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "username": "thoangtran",
+      "email": "thoangtran20@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 2,
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "teacher": [
+    {
+      "id": 1,
+      "name": "Angela Yu",
+      "img": "../images/teacher-1.png",
+      "description": "I'm Angela, I'm A Developer With A Passion For Teaching. I'm The Lead Instructor At The London App Brewery, London's Leading Programming Bootcamp. I've Helped Hundreds Of Thousands Of Students Learn To Code And Change Their Lives By Becoming A Developer."
+    },
+    {
+      "id": 2,
+      "name": "John Doe",
+      "img": "../images/teacher-2.png",
+      "description": "John Is A Solutions Architect, Consultant And Software Developer That Has A Particular Interest In All Things Related To Big Data, Cloud & API. He's Also A Many-Times Best Seller Instructor On Udemy For His Courses In Apache Kafka And AWS."
+    },
+    {
+      "id": 3,
+      "name": "Christine Maise",
+      "img": "../images/teacher-3.png",
+      "description": "Christine Has Over 25 Years Experience In Graphic And Interactive Design, With A Unique Focus On Both Design And Development. As A Graduate Of The Rochester Institute Of Technology (RIT)"
+    },
+    {
+      "id": 4,
+      "name": "Colt Stele",
+      "img": "../images/teacher-4.png",
+      "description": "Hi! I'm Colt. I'm A Developer With A Serious Love For Teaching. I've Spent The Last Few Years Teaching People To Program At 2 Different Immersive Bootcamps Where I've Helped Hundreds Of People Become Web Developers And Change Their Lives"
+    }
+  ]
+}

@@ -13,7 +13,9 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 }
 
-var postAPI = 'https://jsonplaceholder.typicode.com/posts';
+
+
+// var postAPI = 'https://jsonplaceholder.typicode.com/posts';
 
 //stream
 // fetch(postAPI)
@@ -28,9 +30,13 @@ var postAPI = 'https://jsonplaceholder.typicode.com/posts';
 //                 <p>${posts.body}</p>
 //             </li>            
 //         });
-
 //         var html = htmls.join('');
 //     }) 
+
+
+// Call API from json-server
+
+// Course API
 
 var courseApi = "http://localhost:3000/courses";
 const getCourses = async (data)=>{
@@ -44,16 +50,78 @@ fetch(courseApi)
         return response.json();
     })
     .then(function(courses) {
+        const box = document.querySelector(".box") 
         var htmls = courses.map(function(courses) {
-            return <div>
-                <h3>{courses.title}</h3>
-                <div>{courses.titlse}</div>
+            return `<span class="amount">${courses.price}</span>
+            <img src="${courses.img}" alt="">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
             </div>
-        })
-        console.log(courses);
+            <h3>${courses.name}</h3>
+            <p>${courses.description}</p>
+            <a href="#" class="btn">Learn More</a>
+            <div class="icons">
+                <p><i class="far fa-clock"></i> 3 hours </p>
+                <p><i class="far fa-calendar"></i> 6 months </p>
+                <p><i class="far fa-book"></i> 24 modules </p>
+            </div>`
+        });
+
+        html = htmls.join('');
+        document.getElementById('course-block').innerHTML = html;
     })
     .catch(function(err) {
         console.log(err);
         alert("Error!")
     })
+  
+// Teacher API
+
+var teacherApi = "http://localhost:3000/teacher";
+const getCourses = async (data)=>{
+  await fetch(teacherApi)
+    .then(res => res.json())
+    .then(data);
+}
+
+fetch(teacherApi) 
+    .then(function(response) {
+        return response.json();
+    }) 
+    .then(function(teacher) {
+        const box = document.querySelector(".box") 
+        var htmls = teacher.map(function(teacher) {
+            return `<img src="${teacher.img}" alt="">
+            <h3>${teacher.name}</h3>
+            <span>Teacher</span>
+            <p>${teacher.description}</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>`
+        }) 
+
+        html = htmls.join('');
+        document.getElementById('teacher-block').innerHTML = html;
+    })
+    .catch(function(err) {
+        console.log(err);
+        alert("Error!")
+    })
+
+// Call Api in RapidAPI
+
+fetch("https://udemy-courses-coupon-code.p.rapidapi.com/api/udemy_course/", {
+  "method": "GET",
+  "headers": {
+    "x-rapidapi-host": "udemy-courses-coupon-code.p.rapidapi.com",
+    "x-rapidapi-key": "9041e6ef80msh4983053313a3931p14def8jsnf768a6b435ce"
+  }
+})
 

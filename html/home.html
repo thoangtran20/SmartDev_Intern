@@ -19,15 +19,18 @@
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-        </script>
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous">
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-        </script>
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous">
+    </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-        </script>
-
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous">
+    </script>
+    <script src="../js/local_storage.js"></script>
 </head>
 
 <body>
@@ -47,7 +50,7 @@
                 <a href="price.html">Price</a>
                 <a href="review.html">Review</a>
                 <a href="contact.html">Contact</a>
-                <a href="login.html">Login</a>
+                <a id = "login-btn"  href="login.html">Login</a>
             </nav>
         </header>
 
@@ -56,6 +59,7 @@
         <section class="home">
 
             <div class="content">
+                <h3 id="currentUser"></h3>
                 <h3>E-learning is a better way of learning</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua</p>
@@ -75,7 +79,7 @@
         <!-- <section class="course">
 
             <div class="box">
-                <span class="amount">$19.99</span>
+                <span class="amount">$89.99</span>
                 <img src="../images/course-1.svg" alt="">
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -85,19 +89,19 @@
                     <i class="far fa-star"></i>
                 </div>
                 <h3>Front End Development</h3>
-                <p>You'll learn all the fundamentals of Front-End Web Development and how you can Use them t
-                    start creating websites!
+                <p>Lorem ipsum dolor sit fsdaamet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua
                 </p>
                 <a href="#" class="btn">Learn More</a>
                 <div class="icons">
-                    <p><i class="far fa-clock"></i> 3 hours </p>
+                    <p><i class="far fa-clock"></i> 2 hours </p>
                     <p><i class="far fa-calendar"></i> 6 months </p>
-                    <p><i class="far fa-book"></i> 24 modules </p>
+                    <p><i class="far fa-book"></i> 20 modules </p>
                 </div>
             </div>
 
             <div class="box">
-                <span class="amount">$29.99</span>
+                <span class="amount">$89.99</span>
                 <img src="../images/course-2.svg" alt="">
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -106,15 +110,15 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <h3>Back End Development</h3>
-                <p>Learn the 25 Codes to Start. A beginner course with the essential basic codes of dynamic web
-                    programming.
+                <h3>Front End Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua
                 </p>
                 <a href="#" class="btn">Learn More</a>
                 <div class="icons">
-                    <p><i class="far fa-clock"></i> 3 hours </p>
+                    <p><i class="far fa-clock"></i> 2 hours </p>
                     <p><i class="far fa-calendar"></i> 6 months </p>
-                    <p><i class="far fa-book"></i> 28 modules </p>
+                    <p><i class="far fa-book"></i> 20 modules </p>
                 </div>
             </div>
 
@@ -128,19 +132,20 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <h3>Full Stack Development</h3>
-                <p>Build and deploy fullstack web apps with NodeJS, React, Redux, Express, and MongoDB.
+                <h3>Front End Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua
                 </p>
                 <a href="#" class="btn">Learn More</a>
                 <div class="icons">
-                    <p><i class="far fa-clock"></i> 3 hours </p>
+                    <p><i class="far fa-clock"></i> 2 hours </p>
                     <p><i class="far fa-calendar"></i> 6 months </p>
-                    <p><i class="far fa-book"></i> 30 modules </p>
+                    <p><i class="far fa-book"></i> 20 modules </p>
                 </div>
             </div>
 
             <div class="box">
-                <span class="amount">$39.99</span>
+                <span class="amount">$89.99</span>
                 <img src="../images/course-4.svg" alt="">
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -149,20 +154,20 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <h3>JavaScript Basic</h3>
-                <p>The modern JavaScript course for everyone! Master JavaScript with projects, challenges and theory.
-                    Many courses in one!
+                <h3>Front End Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua
                 </p>
                 <a href="#" class="btn">Learn More</a>
                 <div class="icons">
-                    <p><i class="far fa-clock"></i> 3 hours </p>
+                    <p><i class="far fa-clock"></i> 2 hours </p>
                     <p><i class="far fa-calendar"></i> 6 months </p>
-                    <p><i class="far fa-book"></i> 26 modules </p>
+                    <p><i class="far fa-book"></i> 20 modules </p>
                 </div>
             </div>
 
             <div class="box">
-                <span class="amount">$49.99</span>
+                <span class="amount">$89.99</span>
                 <img src="../images/course-5.svg" alt="">
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -171,20 +176,20 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <h3>JavaScript Advanced</h3>
-                <p>An advanced JavaScript course for everyone! Scope, closures, prototypes, 'this', build your own
-                    framework, and more.
+                <h3>Front End Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua
                 </p>
                 <a href="#" class="btn">Learn More</a>
                 <div class="icons">
-                    <p><i class="far fa-clock"></i> 3 hours </p>
+                    <p><i class="far fa-clock"></i> 2 hours </p>
                     <p><i class="far fa-calendar"></i> 6 months </p>
-                    <p><i class="far fa-book"></i> 30 modules </p>
+                    <p><i class="far fa-book"></i> 20 modules </p>
                 </div>
             </div>
 
             <div class="box">
-                <span class="amount">$59.99</span>
+                <span class="amount">$89.99</span>
                 <img src="../images/course-6.svg" alt="">
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -193,21 +198,21 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <h3>ReactJS Basic</h3>
-                <p>Dive in and learn React.js from scratch! Learn Reactjs, Hooks, Redux, React Routing, Animations,
-                    Next.js and way more!
+                <h3>Front End Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua
                 </p>
                 <a href="#" class="btn">Learn More</a>
                 <div class="icons">
-                    <p><i class="far fa-clock"></i> 3 hours </p>
+                    <p><i class="far fa-clock"></i> 2 hours </p>
                     <p><i class="far fa-calendar"></i> 6 months </p>
-                    <p><i class="far fa-book"></i> 32 modules </p>
+                    <p><i class="far fa-book"></i> 20 modules </p>
                 </div>
             </div>
 
         </section> -->
-<!-- 
-        <h1 class="heading"> Experienced Teachers </h1> -->
+
+        <!-- <h1 class="heading"> Experienced Teachers </h1> -->
 
         <!-- teacher section -->
 
@@ -215,12 +220,10 @@
 
             <div class="box">
                 <img src="../images/teacher-1.png" alt="">
-                <h3>Angela Yu</h3>
+                <h3>John Deo</h3>
                 <span>Teacher</span>
-                <p>I'm Angela, I'm a developer with a passion for teaching. I'm the lead instructor at the London App
-                    Brewery, London's leading Programming Bootcamp.
-                    I've helped hundreds of thousands of students learn to code and change their lives by becoming a
-                    developer.
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
                 </p>
                 <div class="share">
                     <a href="#" class="fab fa-facebook-f"></a>
@@ -234,9 +237,8 @@
                 <img src="../images/teacher-2.png" alt="">
                 <h3>John Deo</h3>
                 <span>Teacher</span>
-                <p>John is a solutions architect, consultant and software developer that has a particular interest in
-                    all things related to Big Data, Cloud & API.
-                    He's also a many-times best seller instructor on Udemy for his courses in Apache Kafka and AWS.
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
                 </p>
                 <div class="share">
                     <a href="#" class="fab fa-facebook-f"></a>
@@ -248,11 +250,10 @@
 
             <div class="box">
                 <img src="../images/teacher-3.png" alt="">
-                <h3>Christine Maisel</h3>
+                <h3>John Deo</h3>
                 <span>Teacher</span>
-                <p>Christine has over 25 years experience in graphic and interactive design, with a unique focus on both
-                    design and development.
-                    As a graduate of the Rochester Institute of Technology (RIT)
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
                 </p>
                 <div class="share">
                     <a href="#" class="fab fa-facebook-f"></a>
@@ -264,11 +265,10 @@
 
             <div class="box">
                 <img src="../images/teacher-4.png" alt="">
-                <h3>Colt Stele</h3>
+                <h3>John Deo</h3>
                 <span>Teacher</span>
-                <p>Hi! I'm Colt. I'm a developer with a serious love for teaching. I've spent the last few years
-                    teaching people to program at 2 different immersive bootcamps
-                    where I've helped hundreds of people become web developers and change their lives
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
                 </p>
                 <div class="share">
                     <a href="#" class="fab fa-facebook-f"></a>
@@ -326,10 +326,11 @@
             </div>
 
         </section> -->
-<!-- 
-        <h1 class="heading"> Student 's review </h1> -->
+
+        <!-- <h1 class="heading"> Student 's review </h1> -->
 
         <!-- review section -->
+
         <!-- <section class="review">
 
             <div class="box">
@@ -343,8 +344,8 @@
                     </div>
                     <i class="fas fa-quote-right"></i>
                 </div>
-                <p class="text">Thank you colt for inspiring me to start and continue with my developer journey! 
-                    The course has really opened my eyes to many possibilities and I couldn't thank you enough!
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.
                 </p>
             </div>
 
@@ -354,14 +355,14 @@
                     <div class="student-info">
                         <img src="../images/student-2.png" alt="">
                         <div class="info">
-                            <h3>Alice Kate</h3>
+                            <h3>Andrei Henry</h3>
                             <span>Student</span>
                         </div>
                     </div>
                     <i class="fas fa-quote-right"></i>
                 </div>
-                <p class="text">Wow! I had been trying to learn development for so long with other courses and tutorials,
-                     but this is the first time I feel like I actually learned something where I don't feel like something is missing at the end.
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.
                 </p>
             </div>
 
@@ -371,14 +372,14 @@
                     <div class="student-info">
                         <img src="../images/student-3.png" alt="">
                         <div class="info">
-                            <h3>Bob Ghodsi</h3>
+                            <h3>Andrei Henry</h3>
                             <span>Student</span>
                         </div>
                     </div>
                     <i class="fas fa-quote-right"></i>
                 </div>
-                <p class="text">The course is excellent, it teaches you how to be self-sufficient in app development, it feels also realistically pitched, 
-                    it is very easy to understand as well, Angela is a fantastic teacher!
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.
                 </p>
             </div>
 
@@ -388,14 +389,14 @@
                     <div class="student-info">
                         <img src="../images/student-4.png" alt="">
                         <div class="info">
-                            <h3>Amy Henke</h3>
+                            <h3>Andrei Henry</h3>
                             <span>Student</span>
                         </div>
                     </div>
                     <i class="fas fa-quote-right"></i>
                 </div>
-                <p class="text">This course seriously need to be updated. A lot is still valid, but somethings are severely outdated and you'll have to spend 
-                    countless hours googling all of the errors you'll get
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.
                 </p>
             </div>
 
@@ -405,14 +406,14 @@
                     <div class="student-info">
                         <img src="../images/student-5.png" alt="">
                         <div class="info">
-                            <h3>Albert Geluk</h3>
+                            <h3>Andrei Henry</h3>
                             <span>Student</span>
                         </div>
                     </div>
                     <i class="fas fa-quote-right"></i>
                 </div>
-                <p class="text">This course is really tailored for absolute beginner in the world of programming. Dr. Angela taught us just in a way 12 year child could catch up. Very easy to follow and useful to get used to all variant stack for a MERN stack developer. 
-                    I wish that she also provides advanced course too for the future!!
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.
                 </p>
             </div>
 
@@ -422,18 +423,20 @@
                     <div class="student-info">
                         <img src="../images/student-6.png" alt="">
                         <div class="info">
-                            <h3>Lyudmila Mihaylova</h3>
+                            <h3>Andrei Henry</h3>
                             <span>Student</span>
                         </div>
                     </div>
                     <i class="fas fa-quote-right"></i>
                 </div>
-                <p class="text">The course introduces you to all the basic stuff you need to know to get confident with the crazy world of Web Dev. It is the perfect course for
-                     absolute beginners in the world of general software development.
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.
                 </p>
             </div>
 
         </section> -->
+
+
 
         <h1 class="heading">Contact Us</h1>
 
@@ -460,6 +463,7 @@
 
             </form>
         </section>
+
 
         <!-- footer section -->
 

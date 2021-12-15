@@ -282,7 +282,6 @@ header .navbar a:hover {
   color: #666;
   font-size: 1.5rem;
   padding: 1rem 0;
-  text-align: left;
 }
 
 .teacher .box .share a {
@@ -294,7 +293,6 @@ header .navbar a:hover {
   border-radius: .5rem;
   margin: .3rem;
   color: #fff;
-  justify-content: space-around;
 }
 
 .teacher .box .share a:hover {
@@ -342,7 +340,6 @@ header .navbar a:hover {
   padding: .7rem 0;
   font-size: 1.7rem;
   color: #666;
-  text-align: center;
 }
 
 .price .box .btn {
@@ -401,7 +398,6 @@ header .navbar a:hover {
   padding: 1rem 0;
   font-size: 1.6rem;
   color: #666;
-  text-align: left;
 }
 
 .contact {
@@ -544,7 +540,6 @@ header .navbar a:hover {
     
     header .navbar {
         position: absolute;
-        display: block;
         top:100%; left:0; right:0;
         background:#fff;
         border-top: .1rem solid rgba(0,0,0,.2);
@@ -568,7 +563,7 @@ header .navbar a:hover {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
     
   html {
       font-size: 50%;

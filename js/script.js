@@ -1,5 +1,4 @@
-// const { response } = require("express");
-
+console.log("script.js")
 let menu = document.querySelector('#menu');
 let navbar = document.querySelector('.navbar');
 
@@ -13,7 +12,18 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 }
 
-
+// Check current user
+var currentUser = localStorage.getItem('currentUser');
+if (currentUser!= null) {
+    document.getElementById("currentUser").innerHTML = `Welcome, ${currentUser}`;
+    document.getElementById("login-btn").outerHTML = `<a id = "signout-btn"  href="#">Sign out</a>`;
+    document.getElementById("signout-btn").onclick = (e) => {
+        e.preventDefault();
+        localStorage.removeItem('currentUser');
+        window.location.href = "home.html";
+        window.location;
+    }
+}
 
 // var postAPI = 'https://jsonplaceholder.typicode.com/posts';
 
@@ -126,4 +136,3 @@ fetch("https://udemy-courses-coupon-code.p.rapidapi.com/api/udemy_course/", {
     "x-rapidapi-key": "9041e6ef80msh4983053313a3931p14def8jsnf768a6b435ce"
   }
 })
-

@@ -72,6 +72,7 @@ fetch(courseApi)
         });
 
         html = htmls.join('');
+        box.innerHTML = html;
         document.getElementById('course-block').innerHTML = html;
     })
     .catch(function(err) {
@@ -108,6 +109,7 @@ fetch(teacherApi)
         }) 
 
         html = htmls.join('');
+        box.innerHTML = html;
         document.getElementById('teacher-block').innerHTML = html;
     })
     .catch(function(err) {
